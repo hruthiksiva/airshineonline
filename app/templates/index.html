@@ -5,6 +5,103 @@
 
 {% block content %}
 
+
+<section id="popular-packages" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Popular Packages</h2>
+    <div class="row flex-nowrap" id="scrollRow">
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
+          <div class="card-body">
+            <h5 class="card-title">Destination 1</h5>
+            <p class="card-text">Description of Destination 1.</p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
+          <div class="card-body">
+            <h5 class="card-title">Destination 1</h5>
+            <p class="card-text">Description of Destination 1.</p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
+          <div class="card-body">
+            <h5 class="card-title">Destination 1</h5>
+            <p class="card-text">Description of Destination 1.</p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
+          <div class="card-body">
+            <h5 class="card-title">Destination 1</h5>
+            <p class="card-text">Description of Destination 1.</p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
+          <div class="card-body">
+            <h5 class="card-title">Destination 1</h5>
+            <p class="card-text">Description of Destination 1.</p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more card items for additional destinations -->
+    </div>
+    <div class="text-center mt-4">
+      <button class="btn btn-light mr-2" id="scrollLeftBtn">&lt; Left</button>
+      <button class="btn btn-light" id="scrollRightBtn">Right &gt;</button>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Popular Destinations -->
+  <section id="popular-destinations" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Popular Destinations</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
+            <div class="card-body">
+              <h5 class="card-title">Destination 1</h5>
+              <p class="card-text">Description of Destination 1.</p>
+              <a href="#" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
+            <div class="card-body">
+              <h5 class="card-title">Destination 1</h5>
+              <p class="card-text">Description of Destination 1.</p>
+              <a href="#" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more card items for additional destinations -->
+      </div>
+    </div>
+  </section>
+
+
     <div class="slider">
         <div class="s-images">
           <img
@@ -46,39 +143,6 @@
           <div class="arrow">
             <i class="fa-solid fa-arrow-right"></i>
           </div>
-        </div>
-      </div>
-
-    <div class="chat">
-        <div class="chat-right chat-box-1">
-          <img src="{{ url_for('static', filename='image/chat-1.png') }}" alt="chat box 1" />
-        </div>
-        <div class="chat-left chat-box-2">
-          <img src="{{ url_for('static', filename='image/chat-2.png') }}" alt="chat box 2" />
-        </div>
-        <div class="chat-right chat-box-3">
-          <img src="{{ url_for('static', filename='image/chat-3.png') }}" alt="chat box 3" />
-          <img
-            class="laugh-1"
-            src="{{ url_for('static', filename='image/laughing.png') }}"
-            alt="laughing emoji"
-          />
-        </div>
-        <div class="chat-left chat-box-4">
-          <img src="{{ url_for('static', filename='image/chat-4.png') }}" alt="chat box 4" />
-          <img
-            class="laugh-2"
-            src="{{ url_for('static', filename='image/laughing.png') }}"
-            alt="laughing emoji"
-          />
-          <img
-            class="arrow"
-            src="{{ url_for('static', filename='image/Arrow.png') }}"
-            alt="arrow pointing downwards"
-          />
-        </div>
-        <div class="chat-left chat-box-5">
-          <img src="{{ url_for('static', filename='image/chat-5.png') }}" alt="chat box 5" />
         </div>
       </div>
 
@@ -165,3 +229,17 @@
       </div>
     </section>
 {% endblock %}
+
+
+
+<script>
+  $(document).ready(function() {
+    $('#scrollLeftBtn').click(function() {
+      $('#scrollRow').animate({scrollLeft: '-=200'}, 400);
+    });
+
+    $('#scrollRightBtn').click(function() {
+      $('#scrollRow').animate({scrollLeft: '+=200'}, 400);
+    });
+  });
+</script>

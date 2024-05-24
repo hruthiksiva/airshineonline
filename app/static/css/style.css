@@ -143,6 +143,7 @@ nav {
 .content {
   /* width: 100%; */
   background-image: url('../image/body-background.png');
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
@@ -823,4 +824,101 @@ footer {
     border-radius: 15px;
     width: 100%;
   }
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-links ul li a:hover {
+    color: #000;
+}
+
+.footer-links ul li ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li ul li {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-links ul li ul li a {
+    color: #555;
+}
+
+.footer-links ul li ul li a:hover {
+    color: #000;
+}
+
+@media (max-width: 600px) {
+  .footer-links {
+    flex-direction: column;
+  }
+}
+
+
+.card-container {
+  width: 100%; /* Adjust as needed */
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card {
+  flex: 0 0 auto;
+  margin-right: 10px; /* Adjust spacing between cards */
+  max-width: 18rem; /* Limit the maximum width of the card */
+}
+
+.card-body {
+  max-width: 100%; /* Ensure card body stays within card */
 }

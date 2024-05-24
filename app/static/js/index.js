@@ -1,5 +1,16 @@
 console.log('started index')
 
+
+  $(document).ready(function() {
+    $('#scrollLeftBtn').click(function() {
+      $('#scrollRow').animate({scrollLeft: '-=200'}, 400);
+    });
+
+    $('#scrollRightBtn').click(function() {
+      $('#scrollRow').animate({scrollLeft: '+=200'}, 400);
+    });
+  });
+
 var hamberg = document.querySelectorAll('.n-button')
 hamberg.forEach((ham) => {
   ham.addEventListener('click', ()=>{
