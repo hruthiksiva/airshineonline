@@ -1,5 +1,6 @@
 # app/views.py
 from flask import Blueprint, render_template
+import time
 
 bp = Blueprint('main', __name__)
 

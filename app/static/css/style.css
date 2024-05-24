@@ -922,3 +922,70 @@ footer {
 .card-body {
   max-width: 100%; /* Ensure card body stays within card */
 }
+
+
+        .about-us-section {
+            padding: 60px 0;
+        }
+        .about-us-content {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .team-member {
+            text-align: center;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .team-member h5 {
+            margin-top: 15px;
+        }
+
+ .contact-section {
+            padding: 60px 0;
+        }
+        .faq-section {
+            padding: 60px 0;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+    .h-100 { height: 100vh; }
+    .form-wrap { padding: 20px; }
+    .f-c-head { font-size: 24px; margin-bottom: 10px; }
+    .f-c-desc { margin-bottom: 20px; }
+    .input-box { margin-bottom: 15px; }
+    .input-box span { display: block; margin-top: 5px; color: #6c757d; }
+    .check-box { margin-bottom: 15px; }
+    .submit-button input { background-color: #007bff; color: white; border: none; }
+    .fc-reach { margin-top: 20px; }
+    .reach { display: flex; align-items: center; margin-bottom: 10px; }
+    .reach .icon { margin-right: 10px; }
+    .transparent-box {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+
+        /* Add your loading animation styles here */
+        .loader {
+            border: 16px solid #f3f3f3; /* Light grey */
+            border-top: 16px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+            margin: auto;
+            margin-top: 20%;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
