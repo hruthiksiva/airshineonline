@@ -1,0 +1,166 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <title>{% block title %}Airshine Tours{% endblock %}</title>
+</head>
+<body>
+    <nav>
+      <div class="n-logo">
+        <div class="n-title">Airshine Tours and Travels</div>
+        <hr class="n-line" />
+        <div class="n-logo-plane"></div>
+        <div class="n-tagLine">Your Trusted Travel Partner</div>
+      </div>
+      <ul class="n-menu">
+        <li class="n-menu-item">
+          <a href="{{ url_for('main.home') }}">Home</a>
+        </li>
+        <li class="n-menu-item">
+          <a href="{{ url_for('main.flights') }}">Flights</a>
+        </li>
+        <li class="n-menu-item">
+          <a href="{{ url_for('main.hotels') }}">Hotels</a>
+        </li>
+        <li class="n-menu-item">
+          <a href="{{ url_for('main.holidays') }}">Holidays</a>
+        </li>
+        <li class="n-menu-item n-menu-more">
+          <div>More <span class="n-dots">...</span></div>
+          <ul class="n-more-options">
+            <li class="n-more-option"><a href="{{ url_for('main.visa') }}">Visa</a></li>
+            <li class="n-more-option"><a href="{{ url_for('main.insurance') }}">Insurance</a></li>
+          </ul>
+        </li>
+        <li class="n-menu-item">
+          <a href="{{ url_for('main.contact') }}">Contact</a>
+        </li>
+        <li class="n-menu-item">
+          <a href="{{ url_for('main.about') }}">About Us</a>
+        </li>
+      </ul>
+      <div class="n-button active">
+        <i class="fa-sharp fa-solid fa-bars"></i>
+      </div>
+      <div class="n-button">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="n-contact">
+        <img src="{{ url_for('static', filename='image/nav-phone.png') }}" alt="phone icon" />
+        <div class="n-no">0008888999088</div>
+      </div>
+    </nav>
+    <div class="n-menu-mobile">
+      <ul>
+        <li class="n-menu-item">
+          <a href="{{ url_for('main.flights') }}">Flights</a>
+        </li>
+        <li class="n-menu-item">
+          <a href="{{ url_for('main.hotels') }}">Hotels</a>
+        </li>
+        <li class="n-menu-item">
+          <a href="{{ url_for('main.holidays') }}">Holidays</a>
+        </li>
+        <li class="n-menu-item">
+          <a href="{{ url_for('main.visa') }}">Visa</a>
+        </li>
+        <li class="n-menu-item">
+          <a href="{{ url_for('main.insurance') }}">Insurance</a>
+        </li>
+        <li class="n-menu-item">
+          <a href="">lorel ips</a>
+        </li>
+        <li class="n-menu-item">
+          <a href="">lorel ips</a>
+        </li>
+      </ul>
+      <div class="n-contact">
+        <img src="./assests/nav-phone.png" alt="phone icon" />
+        <div class="n-no">0008888999088</div>
+      </div>
+    </div>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+  <footer>
+    <div class="f-head">About us</div>
+    <div class="f-content">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      IpsumLorem Ipsum is simply dummy text of the printing and typesetting
+      industry. Lorem Ipsum has been the industry's standard dummy text ever
+      since the 1500s, when an unknown printer took a galley of type and
+      scrambled it to make a type specimen book. It has survived not only five
+      centuries, but also the leap into electronic typesetting, remaining
+      essentially unchanged. It was popularised in the 1960s with the release of
+      Letraset sheets containing Lorem Ipsum passages, and more recently with
+      desktop publishing software like Aldus PageMaker including versions of
+      Lorem IpsumLorem Ipsum is simply dummy text of the printing and
+      typesetting industry. Lorem Ipsum has been the industry's standard dummy
+      text ever since the 1500s, when an unknown printer took a galley of type
+      and scrambled it to make a type specimen book. It has survived not only
+      five centuries, but also the leap into electronic typesetting, remaining
+      essentially unchanged. It was popularised in the 1960s with the release of
+      Letraset sheets containing Lorem Ipsum passages, and more recently with
+      desktop publishing software like Aldus PageMaker including versions of
+      Lorem IpsumLorem Ipsum is simply dummy text of the printing and
+      typesetting industry. Lorem Ipsum has been the industry's standard dummy
+      text ever since the 1500s, when an unknown printer took a galley of type
+      and scrambled it to make a type specimen book. It has survived not only
+      five centuries, but also the leap into electronic typesetting, remaining
+      essentially unchanged. It was popularised in the 1960s with the release of
+      Letraset sheets containing Lorem Ipsum passages, and more recently with
+      desktop publishing s
+    </div>
+    <div class="f-line"></div>
+    <div class="f-copy">
+      All copyrights reserved as airshine tours and travels
+    </div>
+  </footer>
+</body>
+    <script>
+      function sendEmail() {
+        console.log('EMail')
+        Email.send({
+          Host: 'smtp.elasticemail.com',
+          Username: 'abdulkalams2015@gmail.com',
+          Password: '43DE2981C81FC5790178D8C98E3F831B9C6F',
+          To: 'sabdul@student.nitw.ac.in',
+          From: 'abdulkalams2015@gmail.com',
+          Subject: 'New contact form Enquiry',
+          Body: "name: " + document.querySelector('#f-c-form-name').value
+                + "<br> street: " + document.querySelector('#f-c-form-street').value
+                + "<br> city: " + document.querySelector('#f-c-form-City').value
+                + "<br> post: " + document.querySelector('#f-c-form-Post').value
+                + "<br> contact: " + document.querySelector('#f-c-form-contact').value
+                + "<br> email: " + document.querySelector('#f-c-form-email').value
+                + "<br> idea: " + document.querySelector('#f-c-form-idea').value
+                + "<br> page: " + "FLights",
+        }).then((message) => alert(message))
+      }
+    </script>
+</html>

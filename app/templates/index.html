@@ -1,0 +1,167 @@
+<!-- templates/index.html -->
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+    <div class="slider">
+        <div class="s-images">
+          <img
+            class="s-image s-left-1"
+            src="{{ url_for('static', filename='image/left1.png') }}"
+            alt="Scenery"
+          />
+          <img
+            class="s-image s-left-2"
+            src="{{ url_for('static', filename='image/left2.png') }}"
+            alt="Scenery"
+          />
+          <img
+            class="s-image s-center"
+            src="{{ url_for('static', filename='image/center.png') }}"
+            alt="Scenery"
+          />
+          <img
+            class="s-image s-right-1"
+            src="{{ url_for('static', filename='image/right1.png') }}"
+            alt="Scenery"
+          />
+          <img
+            class="s-image s-right-2"
+            src="{{ url_for('static', filename='image/right2.png') }}"
+            alt="Scenery"
+          />
+        </div>
+
+        <div class="s-controls">
+          <div class="arrow">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="s-button active"></div>
+          <div class="s-button"></div>
+          <div class="s-button"></div>
+          <div class="s-button"></div>
+          <div class="s-button"></div>
+          <div class="arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+    <div class="chat">
+        <div class="chat-right chat-box-1">
+          <img src="{{ url_for('static', filename='image/chat-1.png') }}" alt="chat box 1" />
+        </div>
+        <div class="chat-left chat-box-2">
+          <img src="{{ url_for('static', filename='image/chat-2.png') }}" alt="chat box 2" />
+        </div>
+        <div class="chat-right chat-box-3">
+          <img src="{{ url_for('static', filename='image/chat-3.png') }}" alt="chat box 3" />
+          <img
+            class="laugh-1"
+            src="{{ url_for('static', filename='image/laughing.png') }}"
+            alt="laughing emoji"
+          />
+        </div>
+        <div class="chat-left chat-box-4">
+          <img src="{{ url_for('static', filename='image/chat-4.png') }}" alt="chat box 4" />
+          <img
+            class="laugh-2"
+            src="{{ url_for('static', filename='image/laughing.png') }}"
+            alt="laughing emoji"
+          />
+          <img
+            class="arrow"
+            src="{{ url_for('static', filename='image/Arrow.png') }}"
+            alt="arrow pointing downwards"
+          />
+        </div>
+        <div class="chat-left chat-box-5">
+          <img src="{{ url_for('static', filename='image/chat-5.png') }}" alt="chat box 5" />
+        </div>
+      </div>
+
+
+
+
+    <section class="contentP">
+      <h2 class="head">Vast Destinations</h2>
+      <div class="content-para">
+        <div class="para-content">
+          <span class="left-span">01</span>
+          <div class="triangle-left"></div>
+          <img src="{{ url_for('static', filename='image/para-1.png') }}" alt="" />
+          <div class="para-content-text">
+            <h2>Memories of life</h2>
+            <div class="p-content">
+              <div class="hl"></div>
+              <div class="vl"></div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="para-content">
+          <span class="right-span">02</span>
+          <div class="triangle-right"></div>
+          <img src="{{ url_for('static', filename='image/para-1.png') }}" alt="" />
+          <div class="para-content-text">
+            <h2>Memories of life</h2>
+            <div class="p-content">
+              <div class="hl"></div>
+              <div class="vl"></div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="para-content">
+          <span class="left-span p3">03</span>
+          <div class="triangle-left"></div>
+          <img src="{{ url_for('static', filename='image/para-1.png') }}" alt="" />
+          <div class="para-content-text">
+            <h2>Memories of life</h2>
+            <div class="p-content">
+              <div class="hl"></div>
+              <div class="vl"></div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}
