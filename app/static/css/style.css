@@ -186,7 +186,7 @@ img.arrow{
 
 .slider {
   width: 100vw;
-  padding: 200px 0;
+  padding: 100px 0;
 }
 
 .s-images {
@@ -988,4 +988,8 @@ footer {
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+
+        .carousel {
+            height: 50vh; /* 50% of the viewport height */
         }
