@@ -4,12 +4,53 @@
 {% block title %}Airshine Tours and Travels{% endblock %}
 
 {% block content %}
+<div class="container">
 
-
-
-
-
-  <section id="popular-package" class="py-5">
+  <div class="content">
+      <section id="popular-package" class="py-5">
+    <div class="container">
+      <div class="row w-100 h-100 transparent-box">
+      <h2 class="text-left mb-4">Popular Packages</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQpIgZBGipAj8HWL5ei5h7En7DmyZFj8mp4WahH-EmtKYh-xd9aZhjMycgDxgQRKz6zc0ph3m3slnArdadkbpyQZ---vPpku4CDN2X55g" class="card-img-top" height="200" width="300" alt="Destination Image">
+            <div class="card-body">
+              <h5 class="card-title">Spain</h5>
+              <p class="card-text">Description of Destination 1.</p>
+              <a href="{{ url_for('main.spain') }}" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
+            <div class="card-body">
+              <h5 class="card-title">Destination 1</h5>
+              <p class="card-text">Description of Destination 1.</p>
+              <a href="#" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
+            <div class="card-body">
+              <h5 class="card-title">Destination 1</h5>
+              <p class="card-text">Description of Destination 1.</p>
+              <a href="#" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more card items for additional destinations -->
+      </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  <div class="content">
+        <!-- Popular Destinations -->
+      <section id="popular-destination" class="py-5">
     <div class="container">
       <div class="row w-100 h-100 transparent-box">
       <h2 class="text-left mb-4">Popular Destinations</h2>
@@ -49,55 +90,15 @@
       </div>
     </div>
   </section>
+  </div>
 
 
 
-  <!-- Popular Destinations -->
-    <section id="popular-destination" class="py-5">
-    <div class="container">
-      <div class="row w-100 h-100 transparent-box">
-      <h2 class="text-left mb-4">Popular Destinations</h2>
-      <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
-            <div class="card-body">
-              <h5 class="card-title">Destination 1</h5>
-              <p class="card-text">Description of Destination 1.</p>
-              <a href="#" class="btn btn-primary">Explore</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
-            <div class="card-body">
-              <h5 class="card-title">Destination 1</h5>
-              <p class="card-text">Description of Destination 1.</p>
-              <a href="#" class="btn btn-primary">Explore</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
-            <div class="card-body">
-              <h5 class="card-title">Destination 1</h5>
-              <p class="card-text">Description of Destination 1.</p>
-              <a href="#" class="btn btn-primary">Explore</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more card items for additional destinations -->
-      </div>
-      </div>
-    </div>
-  </section>
+</div>
 
 
+<div class="container">
 
-
-   <div class="slider">
         <div class="s-images">
           <img
             class="s-image s-left-1"
@@ -139,7 +140,18 @@
             <i class="fa-solid fa-arrow-right"></i>
           </div>
         </div>
-      </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
     <section class="contentP">

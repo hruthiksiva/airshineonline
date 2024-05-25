@@ -48,3 +48,8 @@ def contact():
 @bp.route('/about')
 def about():
     return render_template('about.html')
+
+
+@bp.route('/spain')
+def spain():
+    return render_template('spain.html')
