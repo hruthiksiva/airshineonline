@@ -21,27 +21,6 @@ hamberg.forEach((ham) => {
   })
 })
 
-var logo = document.querySelector('.n-logo')
-logo.addEventListener('click', () => {
-  console.log('logo click')
-  const { origin } = window.location
-  window.location.href = origin
-  console.log(origin)
-})
-
-// handle menu more section
-var navMoreMenu = document.querySelector('.n-menu-more')
-navMoreMenu.addEventListener('click', (event) => {
-  console.log('click')
-  var options = document.querySelector('.n-more-options')
-  console.log(options)
-  if (options.style.display == '' || options.style.display == 'none') {
-    options.style.display = 'flex'
-  } else {
-    options.style.display = 'none'
-  }
-})
-
 // slider
 var SlideImages = document.querySelectorAll('.s-image')
 var Buttons = document.querySelectorAll('.s-button')
@@ -86,52 +65,9 @@ arrows[1].addEventListener('click', () => {
   handleBTN(i, false)
 })
 
-window.addEventListener('resize', () => {
-  var chatbox3 = document.querySelector('.chat-box-3')
-  var chatBoxOffSets = chatbox3.getBoundingClientRect()
-  var chatbox3Img = document.querySelector('.chat-box-3 img')
-  var imgOffSets = chatbox3Img.getBoundingClientRect()
-  var laugh1 = document.querySelector('.laugh-1')
-  laugh1.style.left = imgOffSets.right - chatBoxOffSets.left - 65 + 'px'
-
-  if(window.innerWidth < 370){
-    laugh1.style.left = imgOffSets.right - chatBoxOffSets.left - 50 + 'px'
-  }
-
-  var chatbox4 = document.querySelector('.chat-box-4')
-  var chatBoxOffSets = chatbox4.getBoundingClientRect()
-  var chatbox4Img = document.querySelector('.chat-box-4 img')
-  var imgOffSets = chatbox4Img.getBoundingClientRect()
-  var laugh2 = document.querySelector('.laugh-2')
-  laugh2.style.left = imgOffSets.right - chatBoxOffSets.left - 60 + 'px'
-  var arrow = document.querySelector('.chat img.arrow')
-  arrow.style.left = imgOffSets.right - chatBoxOffSets.left - 35 + 'px'
-
-  if(window.innerWidth < 370){
-    laugh2.style.left = imgOffSets.right - chatBoxOffSets.left - 40 + 'px'
-    arrow.style.left = imgOffSets.right - chatBoxOffSets.left - 30 + 'px'
-  }
-})
-
-var chatbox3 = document.querySelector('.chat-box-3')
-var chatBoxOffSets = chatbox3.getBoundingClientRect()
-var chatbox3Img = document.querySelector('.chat-box-3 img')
-var imgOffSets = chatbox3Img.getBoundingClientRect()
-var laugh1 = document.querySelector('.laugh-1')
-laugh1.style.left = imgOffSets.right - chatBoxOffSets.left - 65 + 'px'
-
 if(window.innerWidth < 370){
   laugh1.style.left = imgOffSets.right - chatBoxOffSets.left - 50 + 'px'
 }
-
-var chatbox4 = document.querySelector('.chat-box-4')
-var chatBoxOffSets = chatbox4.getBoundingClientRect()
-var chatbox4Img = document.querySelector('.chat-box-4 img')
-var imgOffSets = chatbox4Img.getBoundingClientRect()
-var laugh2 = document.querySelector('.laugh-2')
-laugh2.style.left = imgOffSets.right - chatBoxOffSets.left - 60 + 'px'
-var arrow = document.querySelector('.chat img.arrow')
-arrow.style.left = imgOffSets.right - chatBoxOffSets.left - 35 + 'px'
 
 if(window.innerWidth < 370){
   laugh2.style.left = imgOffSets.right - chatBoxOffSets.left - 40 + 'px'
