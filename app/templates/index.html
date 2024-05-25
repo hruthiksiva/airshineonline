@@ -234,8 +234,9 @@
       </div>
     </section>
 
-  <div class="container-fluid h-100 d-flex align-items-center justify-content-center">
-    <div class="row w-100 h-90 transparent-box">
+  <div class="container about-us-section">
+  <div class="container d-flex align-items-center justify-content-center">
+    <div class="row transparent-box">
       <div class="col-md-6 d-flex align-items-center">
         <div class="form-wrap w-100">
           <div class="form-content">
@@ -281,13 +282,15 @@
                 <label class="form-check-label" for="f-c-form-terms">Apply to terms and conditions of airshine travels</label>
               </div>
               <button type="submit" class="btn btn-primary mt-3">Submit</button>
-
-              <div class="row">
+            </form>
+          </div>
+          <br>
+          <div class="row">
                 <div class="col">
                   <div class="icon">
                     <img src="{{ url_for('static', filename='image/reach-phone.png') }}" alt="Phone">
                   </div>
-                  <div class="content">
+                  <div class="content2">
                     <div class="title">Phone</div>
                     <div class="value">111 111 111</div>
                   </div>
@@ -296,7 +299,7 @@
                   <div class="icon">
                     <img src="{{ url_for('static', filename='image/reach-mail.png') }}" alt="E-Mail">
                   </div>
-                  <div class="content">
+                  <div class="content2">
                     <div class="title">E-Mail</div>
                     <div class="value">info@company.com</div>
                   </div>
@@ -305,21 +308,21 @@
                   <div class="icon">
                     <img src="{{ url_for('static', filename='image/reach-mail.png') }}" alt="Helpdesk">
                   </div>
-                  <div class="content">
+                  <div class="content2">
                     <div class="title">Helpdesk</div>
                     <div class="value">https://helpdesk.com</div>
                   </div>
                 </div>
               </div>
-            </form>
-          </div>
         </div>
+
       </div>
       <div class="col-md-6 p-0">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.130823742066!2d78.68833221471863!3d10.801290892304683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf510a408cb71%3A0x39e27f5a3c6f7320!2sTrichy%20Airshine%20Tours%20And%20Travels%20(P)%20Ltd.%2C!5e0!3m2!1sen!2sin!4v1679975313886!5m2!1sen!2sin" class="w-100 h-100" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
+</div>
 {% endblock %}
 
 
