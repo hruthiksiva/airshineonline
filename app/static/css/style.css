@@ -999,3 +999,28 @@ footer {
             padding: 20px;
             border-radius: 10px;
         }
+        .tour-card {
+            margin-bottom: 30px;
+        }
+        .tour-card img {
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .tour-card .card-body {
+            background-color: #f8f9fa;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .tour-card .card-title {
+            font-weight: bold;
+            color: #333;
+            font-size: 1.2rem;
+        }
+        .tour-card .card-text {
+            color: #666;
+        }
+        .pagination {
+            justify-content: center;
+        }

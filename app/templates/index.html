@@ -4,9 +4,14 @@
 {% block title %}Airshine Tours and Travels{% endblock %}
 
 {% block content %}
+<!--    <div class="container-fluid full-width-container">-->
+<!--        <img src="{{ url_for('static', filename='image/cover-image.jpg') }}" class="img-fluid">-->
+<!--    </div>-->
 <div class="container">
 
   <div class="content">
+
+
       <section id="popular-package" class="py-5">
     <div class="container">
       <div class="row w-100 h-100 transparent-box">
@@ -24,11 +29,11 @@
         </div>
         <div class="col-lg-4 mb-4">
           <div class="card">
-            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Dubai_Skylines_at_night_%28Pexels_3787839%29.jpg/640px-Dubai_Skylines_at_night_%28Pexels_3787839%29.jpg" class="card-img-top" alt="Destination Image">
             <div class="card-body">
-              <h5 class="card-title">Destination 1</h5>
-              <p class="card-text">Description of Destination 1.</p>
-              <a href="#" class="btn btn-primary">Explore</a>
+              <h5 class="card-title">Dubai</h5>
+              <p class="card-text">4 Nights/5 Days</p>
+              <a href="{{ url_for('main.dubai') }}" class="btn btn-primary">Explore</a>
             </div>
           </div>
         </div>
@@ -92,7 +97,23 @@
   </section>
   </div>
 
+      <div class="container mt-5 transparent-box">
+        <div class="row">
+                            <div class="col-md-4">
+                                <h2>3 Decades of Experience</h2>
+                                <p>Incorporated on November 3rd 1995, Airshine will always be our client’s ‘Trusted Travel Partner’.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h2>2 Million + Satisfied Clients</h2>
+                                <p>Airshine is the #1 Choice for our loyal clients in all their adventures.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h2>100,000+ Outbound Tours</h2>
+                                <p>One stop shop for Domestic & International outbound tours. Tailor made to your preferred destinations.</p>
+                            </div>
 
+            </div>
+    </div>
 
 </div>
 
@@ -142,21 +163,10 @@
         </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
     <section class="contentP">
-      <h2 class="head">Vast Destinations</h2>
+
       <div class="content-para">
+              <h2 class="head">Customer Feedbacks</h2>
         <div class="para-content">
           <span class="left-span">01</span>
           <div class="triangle-left"></div>
