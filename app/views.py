@@ -53,3 +53,18 @@ def about():
 @bp.route('/spain')
 def spain():
     return render_template('spain.html')
+
+
+@bp.route('/dubai')
+def dubai():
+    return render_template('dubai.html')
+
+
+@bp.route('/ourstory')
+def ourstory():
+    return render_template('ourstory.html')
+
+
+@bp.route('/ourservices')
+def ourservices():
+    return render_template('ourservices.html')
