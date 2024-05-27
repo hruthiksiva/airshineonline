@@ -68,3 +68,8 @@ def ourstory():
 @bp.route('/ourservices')
 def ourservices():
     return render_template('ourservices.html')
+
+
+@bp.route('/faq')
+def faq():
+    return render_template('faq.html')

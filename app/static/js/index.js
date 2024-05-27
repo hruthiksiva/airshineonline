@@ -7,6 +7,8 @@ $(document).ready(function(){
         });
     });
 });
+ document.getElementById('callButton').addEventListener('click', function() {
+      window.location.href = 'tel:+919585557593';
 $(document).ready(function() {
 $('#scrollLeftBtn').click(function() {
   $('#scrollRow').animate({scrollLeft: '-=200'}, 400);

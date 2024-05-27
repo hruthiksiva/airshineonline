@@ -20,8 +20,8 @@
     <title>{% block title %}Airshine Tours{% endblock %}</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Airshine Tours and Travels</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; top: 0; width: 100%; z-index: 1000;">
+  <a class="navbar-brand" href="{{ url_for('main.home') }}">Airshine Tours and Travels</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -31,32 +31,41 @@
       <li class="nav-item">
         <a class="nav-link" href="{{ url_for('main.home') }}">Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('main.flights') }}">Flights</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('main.hotels') }}">Hotels</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('main.holidays') }}">Holidays</a>
-      </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          More
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Company
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{ url_for('main.about') }}">About Us</a>
+          <a class="dropdown-item" href="{{ url_for('main.contact') }}">Contact</a>
+          <a class="dropdown-item" href="{{ url_for('main.ourstory') }}">Our Story</a>
+          <a class="dropdown-item" href="{{ url_for('main.ourservices') }}">Our Services</a>
+          <a class="dropdown-item" href="{{ url_for('main.faq') }}">Frequently Asked Question</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{ url_for('main.flights') }}">Flights</a>
+          <a class="dropdown-item" href="{{ url_for('main.hotels') }}">Hotels</a>
           <a class="dropdown-item" href="{{ url_for('main.visa') }}">Visa</a>
           <a class="dropdown-item" href="{{ url_for('main.insurance') }}">Insurance</a>
         </div>
       </li>
-    </ul>
-    <ul class="navbar-nav ml-auto">
+
       <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('main.about') }}">About Us</a>
+        <a class="nav-link" href="{{ url_for('main.holidays') }}">Holidays</a>
       </li>
+
       <li class="nav-item">
         <a class="nav-link" href="{{ url_for('main.contact') }}">Contact</a>
-      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <button class="btn btn-primary" id="callButton"><i class="fas fa-phone"></i> +919585557593</button>
+        </li>
     </ul>
   </div>
 </nav>
