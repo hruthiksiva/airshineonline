@@ -3,95 +3,9 @@
 {% block title %}Flights - Airshine{% endblock %}
 
 {% block content %}
-<div class="container about-us-section">
-  <div class="container d-flex align-items-center justify-content-center">
-    <div class="row transparent-box">
-      <div class="col-md-6 d-flex align-items-center">
-        <div class="form-wrap w-100">
-          <div class="form-content">
-            <div class="f-c-head">
-              Get in <span class="f-c-h-highlight">touch</span>
-            </div>
-            <div class="f-c-desc">
-              Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.
-            </div>
-            <form class="f-c-form" onsubmit="sendEmail(); reset(); return false;">
-              <div class="form-group">
-                <label for="f-c-form-name">Contact name</label>
-                <input type="text" class="form-control" id="f-c-form-name" required>
-              </div>
-              <div class="form-group">
-                <label for="f-c-form-street">Street</label>
-                <input type="text" class="form-control" id="f-c-form-street" required>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-8">
-                  <label for="f-c-form-City">City</label>
-                  <input type="text" class="form-control" id="f-c-form-City" required>
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="f-c-form-Post">PostCode</label>
-                  <input type="number" class="form-control" id="f-c-form-Post" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="f-c-form-contact">Contact Phone</label>
-                <input type="text" class="form-control" id="f-c-form-contact" required>
-              </div>
-              <div class="form-group">
-                <label for="f-c-form-email">E-mail</label>
-                <input type="email" class="form-control" id="f-c-form-email" required>
-              </div>
-              <div class="form-group">
-                <label for="f-c-form-idea">Lets talk about your idea</label>
-                <input type="text" class="form-control" id="f-c-form-idea" required>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="f-c-form-terms" required>
-                <label class="form-check-label" for="f-c-form-terms">Apply to terms and conditions of airshine travels</label>
-              </div>
-              <button type="submit" class="btn btn-primary mt-3">Submit</button>
-            </form>
-          </div>
-          <br>
-          <div class="row">
-                <div class="col">
-                  <div class="icon">
-                    <img src="{{ url_for('static', filename='image/reach-phone.png') }}" alt="Phone">
-                  </div>
-                  <div class="content2">
-                    <div class="title">Phone</div>
-                    <div class="value">111 111 111</div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="icon">
-                    <img src="{{ url_for('static', filename='image/reach-mail.png') }}" alt="E-Mail">
-                  </div>
-                  <div class="content2">
-                    <div class="title">E-Mail</div>
-                    <div class="value">info@company.com</div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="icon">
-                    <img src="{{ url_for('static', filename='image/reach-mail.png') }}" alt="Helpdesk">
-                  </div>
-                  <div class="content2">
-                    <div class="title">Helpdesk</div>
-                    <div class="value">https://helpdesk.com</div>
-                  </div>
-                </div>
-              </div>
-        </div>
 
-      </div>
-      <div class="col-md-6 p-0">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.130823742066!2d78.68833221471863!3d10.801290892304683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf510a408cb71%3A0x39e27f5a3c6f7320!2sTrichy%20Airshine%20Tours%20And%20Travels%20(P)%20Ltd.%2C!5e0!3m2!1sen!2sin!4v1679975313886!5m2!1sen!2sin" class="w-100 h-100" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </div>
-</div>
+
+{% include 'contactform.html' %}
 
 
 {% endblock %}

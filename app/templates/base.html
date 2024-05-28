@@ -267,4 +267,12 @@
     });
   });
 </script>
+<script>
+    $(document).ready(function(){
+        $('#faqList a').on('click', function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    });
+</script>
 </html>
