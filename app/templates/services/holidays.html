@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}Airshine Holidays{% endblock %}
+
+{% block content %}
+
+
+<div class="container mt-5">
+
+        <!-- Search Bar -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-6">
+                <input class="form-control" id="searchInput" type="text" placeholder="Search by destination or price...">
+            </div>
+        </div>
+
+        <!-- Tour Packages Section -->
+        <section id="popular-package">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+              <div class="card tour-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Dubai_Skylines_at_night_%28Pexels_3787839%29.jpg/640px-Dubai_Skylines_at_night_%28Pexels_3787839%29.jpg" class="card-img-top" height="200" width="300" alt="Destination Image">
+                <div class="card-body">
+                  <h5 class="card-title">Dubai</h5>
+                  <p class="card-text">4 Days 5 Nights</p>
+                  <a href="{{ url_for('main.dubai4n5d') }}" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+            </div>
+                <div class="col-lg-4 mb-4">
+              <div class="card tour-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Dubai_Skylines_at_night_%28Pexels_3787839%29.jpg/640px-Dubai_Skylines_at_night_%28Pexels_3787839%29.jpg" class="card-img-top" alt="Destination Image">
+                <div class="card-body">
+                  <h5 class="card-title">Dubai</h5>
+                  <p class="card-text">4 Nights/5 Days</p>
+                  <a href="{{ url_for('main.dubai') }}" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+            </div>
+                <div class="col-lg-4 mb-4">
+              <div class="card tour-card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
+                <div class="card-body">
+                  <h5 class="card-title">Destination 1</h5>
+                  <p class="card-text">Description of Destination 1.</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+            </div>
+                <div class="col-lg-4 md-4">
+                        <div class="card tour-card">
+                            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Spain</h5>
+                                <p class="card-text">4 Nights/5 Days - Starting from $1000</p>
+                                <a href="#" class="btn btn-primary">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-lg-4 mb-4">
+              <div class="card tour-card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
+                <div class="card-body">
+                  <h5 class="card-title">Destination 1</h5>
+                  <p class="card-text">Description of Destination 1.</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+            </div>
+                <div class="col-lg-4 mb-4">
+              <div class="card tour-card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
+                <div class="card-body">
+                  <h5 class="card-title">Destination 1</h5>
+                  <p class="card-text">Description of Destination 1.</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+            </div>
+                <div class="col-lg-4 mb-4">
+              <div class="card tour-card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destination Image">
+                <div class="card-body">
+                  <h5 class="card-title">Destination 1</h5>
+                  <p class="card-text">Description of Destination 1.</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+            </div>
+                <!-- Add more card items for additional destinations -->
+            </div>
+        </section>
+
+
+    </div>
+
+{% endblock %}
