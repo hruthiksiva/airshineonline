@@ -1062,3 +1062,56 @@ footer {
             width: 60%;
             margin-left: 20px;
         }
+                .contact-info h2, .contact-form h2 {
+            margin-bottom: 20px;
+        }
+        .map-iframe {
+            border: 0;
+            width: 100%;
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .carousel-inner img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .faq-container {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+        }
+        .list-group-item {
+            cursor: pointer;
+        }
+        .faq-content {
+            margin-left: 20px;
+            flex-grow: 1;
+        }
+        .faq-answer {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+
+         .service-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .service-section {
+            margin-bottom: 2rem;
+        }
+        .content-box2 {
+            background-color: #f8f9fa;
+            padding: 3rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
