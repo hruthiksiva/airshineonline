@@ -59,6 +59,9 @@ def contact():
 def about():
     return render_template('company/about.html')
 
+@bp.route('/testimonials')
+def testimonials():
+    return render_template('company/testimonials.html')
 
 @bp.route('/spain')
 def spain():

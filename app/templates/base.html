@@ -22,7 +22,7 @@
     <title>{% block title %}Airshine Tours{% endblock %}</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; top: 0; width: 100%; z-index: 1000;">
+<nav class="navbar navbar-expand-lg navbar-dark " style="position: fixed; top: 0; width: 100%; z-index: 1000;background-color: #1c2331;">
   <a class="navbar-brand" href="{{ url_for('main.home') }}">Airshine Tours and Travels</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -42,6 +42,8 @@
           <a class="dropdown-item" href="{{ url_for('main.contact') }}">Contact</a>
           <a class="dropdown-item" href="{{ url_for('main.ourstory') }}">Our Story</a>
           <a class="dropdown-item" href="{{ url_for('main.ourservices') }}">Our Services</a>
+          <a class="dropdown-item" href="{{ url_for('main.testimonials') }}">Testimonials</a>
+
           <a class="dropdown-item" href="{{ url_for('main.faq') }}">Frequently Asked Question</a>
         </div>
       </li>
@@ -122,7 +124,7 @@
           <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
-            <h6 class="text-uppercase fw-bold">Airshine Tours and Travels</h6>
+            <h6 class="text-uppercase fw-bold">Airshine</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #037BFF; height: 2px"
@@ -134,9 +136,9 @@
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-left">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Products</h6>
+            <h6 class="text-uppercase fw-bold">Services</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #037BFF; height: 2px"
@@ -153,11 +155,19 @@
             <p>
               <a href="#!" class="text-white">Insurance</a>
             </p>
+            <p>
+              <a href="#!" class="text-white">Domestic</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">International</a>
+            </p>
           </div>
           <!-- Grid column -->
 
+
+
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-left">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold">About Us</h6>
             <hr
@@ -165,10 +175,10 @@
                 style="width: 60px; background-color: #037BFF; height: 2px"
                 />
             <p>
-              <a href="#!" class="text-white">Home</a>
+              <a href="{{ url_for('main.home') }}" class="text-white">Home</a>
             </p>
             <p>
-              <a href="#!" class="text-white">Our Leadership</a>
+              <a href="{{ url_for('main.about') }}" class="text-white">About Us</a>
             </p>
             <p>
               <a href="{{ url_for('main.ourstory') }}" class="text-white">Our Story</a>
@@ -176,19 +186,53 @@
             <p>
               <a href="{{ url_for('main.ourservices') }}" class="text-white">Our Services</a>
             </p>
+
+            <p>
+              <a href="{{ url_for('main.testimonials') }}" class="text-white">Testimonials</a>
+            </p>
+
           </div>
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-left">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <h6 class="text-uppercase fw-bold">Support</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #037BFF; height: 2px"
                 />
+            <p>
+              <a href="{{ url_for('main.contact') }}" class="text-white">Contact</a>
+            </p>
+            <p>
+
+              <a href="#!" class="text-white">Privacy & Policy</a>
+            </p>
+
+            <p>
+              <a href="#!" class="text-white">Terms & Conditions</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Disclaimers</a>
+            </p>
+
+            <p>
+              <a href="{{ url_for('main.faq') }}" class="text-white">FAQ</a>
+            </p>
+          </div>
+
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-left">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 80px; background-color: #037BFF; height: 2px"
+                />
             <p><i class="fas fa-home mr-3"></i> Trichy, Tamil Nadu.</p>
-            <p><i class="fas fa-envelope mr-3"></i> contact@airshineonline.com</p>
+            <p><i class="fas fa-envelope mr-3"></i>contact@airshineonline.com</p>
             <p><i class="fas fa-phone mr-3"></i> +919585557593 </p>
           </div>
           <!-- Grid column -->
@@ -196,15 +240,13 @@
         <!-- Grid row -->
       </div>
     </section>
+    <hr>
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div
-         class="text-center p-3"
-         style="background-color: rgba(0, 0, 0, 0.2)"
-         >
-      © 2020 Airshine Tours and Travels. All rights reserved!
-    </div>
+
+      © 2024 Airshine Tours and Travels. All rights reserved!
+
     <!-- Copyright -->
   </footer>
   <!-- Footer -->

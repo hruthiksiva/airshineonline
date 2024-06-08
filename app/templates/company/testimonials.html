@@ -1,0 +1,44 @@
+<!-- templates/index.html -->
+{% extends "base.html" %}
+
+{% block title %}Customer Testimonials{% endblock %}
+
+{% block content %}
+
+
+
+    <!-- Testimonials Section -->
+    <div class="container mt-5 about-us-section">
+        <h2 class="text-left mb-5">Customer Testimonials</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card testimonial-card">
+                    <div class="card-body text-center">
+                        <img src="https://via.placeholder.com/80" alt="Customer photo">
+                        <h5 class="card-title mt-3">John Doe</h5>
+                        <p class="card-text">"The trip was amazing! Everything was perfectly organized and the customer service was exceptional. Highly recommend!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card testimonial-card">
+                    <div class="card-body text-center">
+                        <img src="https://via.placeholder.com/80" alt="Customer photo">
+                        <h5 class="card-title mt-3">Jane Smith</h5>
+                        <p class="card-text">"An unforgettable experience! The itinerary was fantastic and the guides were very knowledgeable. Will travel with them again."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card testimonial-card">
+                    <div class="card-body text-center">
+                        <img src="https://via.placeholder.com/80" alt="Customer photo">
+                        <h5 class="card-title mt-3">Sam Wilson</h5>
+                        <p class="card-text">"Exceptional service and great value for money. The destinations were breathtaking and the whole trip was well-planned."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
